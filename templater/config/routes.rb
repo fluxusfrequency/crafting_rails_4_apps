@@ -3,6 +3,8 @@ Templater::Application.routes.draw do
 
   resources :sql_templates
 
+  get "cms/*page", to: "cms#respond"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
